@@ -1,0 +1,61 @@
+{#
+/**
+ * Craft Mix
+ *
+ * @author    mister bk! GmbH
+ * @copyright Copyright (c) 2017 mister bk! GmbH
+ * @link      https://www.mister-bk.de/
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: 'Public Path',
+    instructions: 'The path of the public directory containing the index.php.',
+    id: 'publicPath',
+    name: 'publicPath',
+    value: settings.publicPath,
+    required: true
+}) }}
+
+{{ forms.textField({
+    label: 'Asset Path',
+    instructions: 'The path of the asset directory where Laravel Mix stores the compiled files.',
+    id: 'assetPath',
+    name: 'assetPath',
+    value: settings.assetPath,
+    required: true
+}) }}
+
+<hr>
+
+<h3>Plugin Usage</h3>
+
+<p>Find a versioned CSS file.</p>
+<code>
+    <pre>
+{{ '<link rel="stylesheet" href="{{ mix(\'css/main.css\') }}">' | e }}
+    </pre>
+</code>
+
+<p>Find a versioned JavaScript file.</p>
+<code>
+    <pre>
+{{ '<script src="{{ mix(\'js/main.js\') }}"></script>' | e }}
+    </pre>
+</code>
+
+<p>Lazily find a versioned file and build the tag based on the file extension.</p>
+<code>
+    <pre>
+{{ '{{ craft.mix.withTag(\'js/main.js\') | raw }}' | e }}
+    </pre>
+</code>
+
+<p>Alternatively include the content of a versioned file inline.</p>
+<code>
+    <pre>
+{{ '{{ craft.mix.withTag(\'css/main.css\', true) | raw }}' | e }}
+    </pre>
+</code>
