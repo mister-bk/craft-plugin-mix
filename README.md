@@ -1,8 +1,8 @@
 <p align="center">
-  ![Craft Mix Logo](resources/img/craft-mix-logo.svg)
+  <img src="https://cdn.rawgit.com/mister-bk/craft-plugin-mix/master/resources/img/craft-mix-logo.svg" alt="Craft Mix Logo">
 </p>
 <p align="center">
-  Helper plugin for [Laravel Mix](https://github.com/JeffreyWay/laravel-mix/) in [Craft CMS](https://github.com/craftcms/cms/) templates.
+  Helper plugin for <a href="https://github.com/JeffreyWay/laravel-mix/">Laravel Mix</a> in <a href="https://github.com/craftcms/cms/">Craft CMS</a> templates.
 </p>
 
 ## Requirements
