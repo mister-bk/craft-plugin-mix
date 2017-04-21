@@ -39,8 +39,8 @@
         "developer": "mister bk! GmbH",
         "developerUrl": "https://www.mister-bk.de/",
         "description": "Helper plugin for Laravel Mix in Craft CMS templates",
-        "documentationUrl": "https://github.com/mister-bk/mix/blob/master/README.md",
-        "changelogUrl": "https://raw.githubusercontent.com/mister-bk/mix/CHANGELOG.md",
+        "documentationUrl": "https://github.com/mister-bk/craft-plugin-mix/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/mister-bk/craft-plugin-mix/master/CHANGELOG.md",
         "hasCpSettings": true,
         "hasCpSection": false,
         "components": {
