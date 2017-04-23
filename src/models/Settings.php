@@ -14,18 +14,19 @@ use craft\base\Model;
 class Settings extends Model
 {
     /**
-     * Path to the public directory
+     * Path to the public directory.
      *
      * @var string
      */
     public $publicPath = 'web';
 
     /**
-     * Path to the asset directory
+     * Path to the asset directory.
      *
      * @var string
      */
     public $assetPath = 'assets';
+
 
     /**
      * @inheritdoc

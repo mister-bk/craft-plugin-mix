@@ -51,7 +51,7 @@ class MixTwigExtension extends Twig_Extension
      * @param  string  $file
      * @param  bool  $tag  (optional)
      * @param  bool  $inline  (optional)
-     * @return mixed
+     * @return string
      */
     public function mix($file, $tag = false, $inline = false)
     {

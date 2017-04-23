@@ -19,17 +19,24 @@ use Exception;
 class MixService extends Component
 {
     /**
-     * @var string
-     */
-    protected $assetPath;
-    /**
+     * Path to the public directory.
+     *
      * @var string
      */
     protected $publicPath;
 
     /**
-    * @var string
-    */
+     * Path to the asset directory.
+     *
+     * @var string
+     */
+    protected $assetPath;
+
+    /**
+     * Path of the manifest file.
+     *
+     * @var string
+     */
     protected $manifest;
 
 
@@ -40,8 +47,8 @@ class MixService extends Component
     {
         $settings = Mix::$plugin->getSettings();
 
-        $this->assetPath = trim($settings->assetPath, '/');
         $this->publicPath = trim($settings->publicPath, '/');
+        $this->assetPath = trim($settings->assetPath, '/');
         $this->manifest = join('/', [
             CRAFT_BASE_PATH,
             $this->publicPath,
