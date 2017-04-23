@@ -1,8 +1,21 @@
 <p align="center">
   <img src="https://cdn.rawgit.com/mister-bk/craft-plugin-mix/master/resources/img/craft-mix-logo.svg" alt="Craft Mix Logo">
 </p>
+
 <p align="center">
   Helper plugin for <a href="https://github.com/JeffreyWay/laravel-mix/">Laravel Mix</a> in <a href="https://github.com/craftcms/cms/">Craft CMS</a> templates.
+</p>
+
+<p align="center">
+  <a href="https://packagist.org/packages/misterbk/mix">
+    <img src="https://poser.pugx.org/misterbk/mix/d/total.svg" alt="Total Downloads">
+  </a>
+  <a href="https://packagist.org/packages/misterbk/mix">
+    <img src="https://poser.pugx.org/misterbk/mix/v/stable.svg" alt="Latest Stable Version">
+  </a>
+  <a href="https://packagist.org/packages/misterbk/mix">
+    <img src="https://poser.pugx.org/misterbk/mix/license.svg" alt="License">
+  </a>
 </p>
 
 ## Requirements
