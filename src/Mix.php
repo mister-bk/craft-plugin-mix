@@ -60,9 +60,7 @@ class Mix extends Plugin
     {
         return Craft::$app->view->renderTemplate(
             'mix/settings',
-            [
-                'settings' => $this->getSettings()
-            ]
+            ['settings' => $this->getSettings()]
         );
     }
 }
