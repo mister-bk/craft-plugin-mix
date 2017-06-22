@@ -91,6 +91,7 @@ class MixService extends Component
         $extension = pathinfo($file, PATHINFO_EXTENSION);
 
         if ($inline) {
+            $file = substr($file, 0, strpos($file, '?'));
             $absoluteFile = join('/', [
                 CRAFT_BASE_PATH,
                 $this->publicPath,
