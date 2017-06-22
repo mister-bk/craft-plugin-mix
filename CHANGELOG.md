@@ -1,9 +1,14 @@
-# Craft Mix Changelog
+# Changelog
 
-All notable changes to this project will be documented in this file.
+## [Unreleased]
+### Changed
+- Improve package keywords.
+- Fix up the changelog.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
+## 1.0.1 - 2017-04-23
+### Changed
+- Some code styling tweaks
 
-## 1.0.0 - 2017.04.21
+## 1.0.0 - 2017-04-21
 ### Added
-- Initial release
+- Initial release.
