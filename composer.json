@@ -5,10 +5,12 @@
     "version": "1.0.1",
     "keywords": [
         "craft",
+        "craft3",
         "cms",
         "craftcms",
         "craft-plugin",
-        "mix"
+        "mix",
+        "laravel-mix"
     ],
     "license": "MIT",
     "authors": [
