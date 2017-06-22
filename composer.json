@@ -1,8 +1,9 @@
 {
     "name": "misterbk/mix",
     "description": "Helper plugin for Laravel Mix in Craft CMS templates",
-    "type": "craft-plugin",
     "version": "1.0.1",
+    "type": "craft-plugin",
+    "license": "MIT",
     "keywords": [
         "craft",
         "craft3",
@@ -12,7 +13,6 @@
         "mix",
         "laravel-mix"
     ],
-    "license": "MIT",
     "authors": [
         {
             "name": "mister bk! GmbH",
@@ -23,12 +23,6 @@
     "require": {
         "craftcms/cms": "~3.0.0-beta.1"
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ],
     "autoload": {
         "psr-4": {
           "misterbk\\mix\\": "src/"
@@ -38,8 +32,6 @@
         "name": "Mix",
         "handle": "mix",
         "schemaVersion": "1.0.0",
-        "developer": "mister bk! GmbH",
-        "developerUrl": "https://www.mister-bk.de/",
         "documentationUrl": "https://github.com/mister-bk/craft-plugin-mix/blob/master/README.md",
         "changelogUrl": "https://raw.githubusercontent.com/mister-bk/craft-plugin-mix/master/CHANGELOG.md",
         "hasCpSettings": true,
