@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## 1.0.2 - 2017-06-22
 ### Changed
 - Improve package keywords.
 - Fix up the changelog.
