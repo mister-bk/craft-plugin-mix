@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0 - 2017-06-30
+### Changed
+- Fix up the file extension detection
+
 ## 1.2.0 - 2017-06-30
 ### Changed
 - Fix up the removing of GET params from the file path
