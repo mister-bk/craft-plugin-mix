@@ -19,6 +19,13 @@ use Exception;
 class MixService extends Component
 {
     /**
+     * Path to the root directory.
+     *
+     * @var string
+     */
+    protected $rootPath;
+
+    /**
      * Path to the public directory.
      *
      * @var string
@@ -47,10 +54,11 @@ class MixService extends Component
     {
         $settings = Mix::$plugin->getSettings();
 
+        $this->rootPath = rtrim(CRAFT_BASE_PATH, '/');
         $this->publicPath = trim($settings->publicPath, '/');
         $this->assetPath = trim($settings->assetPath, '/');
         $this->manifest = join('/', [
-            CRAFT_BASE_PATH,
+            $this->rootPath,
             $this->publicPath,
             $this->assetPath,
             'mix-manifest.json'
@@ -93,7 +101,7 @@ class MixService extends Component
         if ($inline) {
             $file = strtok($file, '?');
             $absoluteFile = join('/', [
-                CRAFT_BASE_PATH,
+                $this->rootPath,
                 $this->publicPath,
                 ltrim($file, '/')
             ]);
