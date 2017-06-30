@@ -95,15 +95,15 @@ class MixService extends Component
      */
     public function withTag($file, $inline = false)
     {
-        $file = $this->version($file);
+        $versionedFile = $this->version($file);
         $extension = pathinfo($file, PATHINFO_EXTENSION);
 
         if ($inline) {
-            $file = strtok($file, '?');
+            $versionedFile = strtok($versionedFile, '?');
             $absoluteFile = join('/', [
                 $this->rootPath,
                 $this->publicPath,
-                ltrim($file, '/')
+                ltrim($versionedFile, '/')
             ]);
             if (file_exists($absoluteFile)) {
                 $content = file_get_contents($absoluteFile);
@@ -117,10 +117,10 @@ class MixService extends Component
         }
 
         if ($extension === 'js') {
-            return '<script src="' . $file . '"></script>';
+            return '<script src="' . $versionedFile . '"></script>';
         }
 
-        return '<link rel="stylesheet" href="' . $file . '">';
+        return '<link rel="stylesheet" href="' . $versionedFile . '">';
     }
 
     /**
