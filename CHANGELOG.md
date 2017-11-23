@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.0 - 2017-11-23
+### Changed
+- Add support for Craft 3 RC1
+
 ## 1.3.0 - 2017-06-30
 ### Changed
 - Fix up the file extension detection
