@@ -1,43 +1,43 @@
 {
-    "name": "misterbk/mix",
-    "description": "Helper plugin for Laravel Mix in Craft CMS templates",
-    "version": "1.3.0",
-    "type": "craft-plugin",
-    "license": "MIT",
-    "keywords": [
-        "craft",
-        "craft3",
-        "craftcms",
-        "craft-plugin",
-        "mix",
-        "laravel-mix"
-    ],
-    "authors": [
-        {
-            "name": "mister bk! GmbH",
-            "email": "info@mister-bk.de",
-            "homepage": "https://www.mister-bk.de/"
-        }
-    ],
-    "require": {
-        "craftcms/cms": "^3.0.0-RC1"
-    },
-    "autoload": {
-        "psr-4": {
-          "misterbk\\mix\\": "src/"
-        }
-    },
-    "extra": {
-        "name": "Mix",
-        "handle": "mix",
-        "schemaVersion": "1.0.0",
-        "documentationUrl": "https://github.com/mister-bk/craft-plugin-mix/blob/master/README.md",
-        "changelogUrl": "https://raw.githubusercontent.com/mister-bk/craft-plugin-mix/master/CHANGELOG.md",
-        "hasCpSettings": true,
-        "hasCpSection": false,
-        "components": {
-            "mix": "misterbk\\mix\\services\\MixService"
-        },
-        "class": "misterbk\\mix\\Mix"
+  "name": "misterbk/mix",
+  "description": "Helper plugin for Laravel Mix in Craft CMS templates",
+  "version": "1.3.0",
+  "type": "craft-plugin",
+  "license": "MIT",
+  "keywords": [
+    "craft",
+    "craft3",
+    "craftcms",
+    "craft-plugin",
+    "mix",
+    "laravel-mix"
+  ],
+  "authors": [
+    {
+      "name": "mister bk! GmbH",
+      "email": "info@mister-bk.de",
+      "homepage": "https://www.mister-bk.de/"
     }
+  ],
+  "require": {
+    "craftcms/cms": "^3.0.0-RC1"
+  },
+  "autoload": {
+    "psr-4": {
+      "misterbk\\mix\\": "src/"
+    }
+  },
+  "extra": {
+    "name": "Mix",
+    "handle": "mix",
+    "schemaVersion": "1.0.0",
+    "documentationUrl": "https://github.com/mister-bk/craft-plugin-mix/blob/master/README.md",
+    "changelogUrl": "https://raw.githubusercontent.com/mister-bk/craft-plugin-mix/master/CHANGELOG.md",
+    "hasCpSettings": true,
+    "hasCpSection": false,
+    "components": {
+      "mix": "misterbk\\mix\\services\\MixService"
+    },
+    "class": "misterbk\\mix\\Mix"
+  }
 }
