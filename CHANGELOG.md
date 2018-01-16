@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.1 - 2018-01-17
+### Changed
+- Handle empty `publicPath` and `assetPath` settings properly
+
 ## 1.4.0 - 2017-11-23
 ### Changed
 - Add support for Craft 3 RC1
