@@ -57,7 +57,7 @@ class MixService extends Component
         $this->rootPath = rtrim(CRAFT_BASE_PATH, '/');
         $this->publicPath = trim($settings->publicPath, '/');
         $this->assetPath = trim($settings->assetPath, '/');
-        $this->manifest = join('/', [
+        $this->manifest = implode('/', [
             $this->rootPath,
             $this->publicPath,
             $this->assetPath,
@@ -100,7 +100,7 @@ class MixService extends Component
 
         if ($inline) {
             $versionedFile = strtok($versionedFile, '?');
-            $absoluteFile = join('/', [
+            $absoluteFile = implode('/', [
                 $this->rootPath,
                 $this->publicPath,
                 ltrim($versionedFile, '/')
