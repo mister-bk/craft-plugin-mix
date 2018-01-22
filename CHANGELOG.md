@@ -2,7 +2,7 @@
 
 ## 1.4.2 - 2018-01-22
 ### Changed
-- Fix template variable definition (thanks to @nilsenpaul)
+- Fix template variable definition (thanks to [@nilsenpaul](https://github.com/nilsenpaul))
 - Add missing `developerEmail` property for "Send for help" feature
 
 ## 1.4.1 - 2018-01-17
