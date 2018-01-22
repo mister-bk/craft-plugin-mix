@@ -53,14 +53,6 @@ class Mix extends Plugin
     /**
      * @inheritdoc
      */
-    public function defineTemplateComponent()
-    {
-        return MixVariable::class;
-    }
-
-    /**
-     * @inheritdoc
-     */
     protected function createSettingsModel()
     {
         return new Settings();
