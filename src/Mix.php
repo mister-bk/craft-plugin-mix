@@ -39,11 +39,12 @@ class Mix extends Plugin
             CraftVariable::class,
             CraftVariable::EVENT_INIT,
             function (Event $event) {
+                /** @var CraftVariable $variable */
                 $variable = $event->sender;
                 $variable->set('mix', MixVariable::class);
             }
         );
-        
+
         Craft::$app->view->twig->addExtension(new MixTwigExtension());
 
         Craft::info('Mix plugin loaded', __METHOD__);
