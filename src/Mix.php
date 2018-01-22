@@ -15,6 +15,9 @@ use misterbk\mix\variables\MixVariable;
 
 use Craft;
 use craft\base\Plugin;
+use craft\web\twig\variables\CraftVariable;
+
+use yii\base\Event;
 
 class Mix extends Plugin
 {
@@ -32,6 +35,15 @@ class Mix extends Plugin
         parent::init();
         self::$plugin = $this;
 
+        Event::on(
+            CraftVariable::class,
+            CraftVariable::EVENT_INIT,
+            function (Event $event) {
+                $variable = $event->sender;
+                $variable->set('mix', MixVariable::class);
+            }
+        );
+        
         Craft::$app->view->twig->addExtension(new MixTwigExtension());
 
         Craft::info('Mix plugin loaded', __METHOD__);
