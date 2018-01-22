@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.2 - 2018-01-22
+### Changed
+- Fix template variable definition (thanks to @nilsenpaul)
+- Add missing `developerEmail` property for "Send for help" feature
+
 ## 1.4.1 - 2018-01-17
 ### Changed
 - Handle empty `publicPath` and `assetPath` settings properly
