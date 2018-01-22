@@ -31,6 +31,7 @@
     "name": "Mix",
     "handle": "mix",
     "schemaVersion": "1.0.0",
+    "developerEmail": "dev@mister-bk.de",
     "documentationUrl": "https://github.com/mister-bk/craft-plugin-mix/blob/master/README.md",
     "changelogUrl": "https://raw.githubusercontent.com/mister-bk/craft-plugin-mix/master/CHANGELOG.md",
     "hasCpSettings": true,
