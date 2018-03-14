@@ -40,11 +40,18 @@ class MixService extends Component
     protected $assetPath;
 
     /**
+     * Name of the manifest file.
+     *
+     * @var string
+     */
+    protected $manifestName = 'mix-manifest.json';
+
+    /**
      * Path of the manifest file.
      *
      * @var string
      */
-    protected $manifest;
+    protected $manifestPath;
 
 
     /**
@@ -57,11 +64,11 @@ class MixService extends Component
         $this->rootPath = rtrim(CRAFT_BASE_PATH, '/');
         $this->publicPath = trim($settings->publicPath, '/');
         $this->assetPath = trim($settings->assetPath, '/');
-        $this->manifest = implode('/', array_filter([
+        $this->manifestPath = implode('/', array_filter([
             $this->rootPath,
             $this->publicPath,
             $this->assetPath,
-            'mix-manifest.json'
+            $this->manifestName
         ]));
     }
 
@@ -133,9 +140,9 @@ class MixService extends Component
      */
     protected function readManifestFile()
     {
-        if (file_exists($this->manifest)) {
+        if (file_exists($this->manifestPath)) {
             return json_decode(
-                file_get_contents($this->manifest),
+                file_get_contents($this->manifestPath),
                 true
             );
         }
