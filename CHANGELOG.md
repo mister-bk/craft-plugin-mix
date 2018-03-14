@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.3 - 2018-03-14
+### Changed
+- Make the manifest file key check more safe
+
 ## 1.4.2 - 2018-01-22
 ### Changed
 - Fix template variable definition (thanks to [@nilsenpaul](https://github.com/nilsenpaul))
