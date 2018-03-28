@@ -27,7 +27,14 @@ class Settings extends Model
      */
     public $assetPath = 'assets';
 
-
+    
+    /**
+     * Use relative path to the asset directory.
+     *
+     * @var string
+     */
+    public $useRelativePath = false;
+    
     /**
      * @inheritdoc
      */
@@ -36,6 +43,7 @@ class Settings extends Model
         return [
             [['publicPath', 'assetPath'], 'required'],
             [['publicPath', 'assetPath'], 'string'],
+            [['useRelativePath'], 'boolean'],
         ];
     }
 }
