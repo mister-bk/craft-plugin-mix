@@ -28,6 +28,17 @@
     required: true
 }) }}
 
+
+{{ forms.lightswitchField({
+    label: 'Relative Path',
+    instructions: 'The path of the asset directory will be relative to the public directory. Useful if your site is not with in the web root of your server.',
+    id: 'useRelativePath',
+    name: 'useRelativePath',
+    value: true,
+    required: false,
+    on: (settings.useRelativePath is defined) ? settings.useRelativePath : ""
+}) }}
+
 <hr>
 
 <h3>Plugin Usage</h3>

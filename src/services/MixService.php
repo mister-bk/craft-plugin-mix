@@ -38,7 +38,14 @@ class MixService extends Component
      * @var string
      */
     protected $assetPath;
-
+    
+    /**
+     * Use a relative path to the asset directory.
+     *
+     * @var string
+     */
+    protected $useRelativePath;
+    
     /**
      * Name of the manifest file.
      *
@@ -60,7 +67,8 @@ class MixService extends Component
     public function init()
     {
         $settings = Mix::$plugin->getSettings();
-
+        
+        $this->useRelativePath = $settings->useRelativePath;
         $this->rootPath = rtrim(CRAFT_BASE_PATH, '/');
         $this->publicPath = trim($settings->publicPath, '/');
         $this->assetPath = trim($settings->assetPath, '/');
@@ -91,7 +99,7 @@ class MixService extends Component
             $file = $manifest[$fileKey];
         }
 
-        return '/' . implode('/', array_filter([
+        return ($this->useRelativePath ? '' : '/') . implode('/', array_filter([
             $this->assetPath,
             ltrim($file, '/')
         ]));
