@@ -47,6 +47,8 @@ The available settings are:
   * **Public Path** - The path of the public directory containing the index.php
   * **Asset Path** - The path of the asset directory where Laravel Mix stores the compiled files
 
+**Note:** If you store your assets directly in `web/` folder like `web/js` and so on, then set **Asset Path** as `/`.
+
 ## Usage
 
 Find a versioned CSS file.
