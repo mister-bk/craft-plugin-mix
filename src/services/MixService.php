@@ -91,8 +91,8 @@ class MixService extends Component
      */
     public function version($file)
     {
-        if (file_exists($this->assetFullPath.'/hot')) {
-            return "//localhost:8080/{$file}";
+        if (file_exists($this->assetFullPath . '/hot')) {
+            return '//localhost:8080/' . $file;
         }
 
         try {
