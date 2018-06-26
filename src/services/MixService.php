@@ -40,6 +40,13 @@ class MixService extends Component
     protected $assetPath;
 
     /**
+     * Full path to the asset directory.
+     *
+     * @var string
+     */
+    protected $assetFullPath;
+
+    /**
      * Name of the manifest file.
      *
      * @var string
@@ -64,12 +71,16 @@ class MixService extends Component
         $this->rootPath = rtrim(CRAFT_BASE_PATH, '/');
         $this->publicPath = trim($settings->publicPath, '/');
         $this->assetPath = trim($settings->assetPath, '/');
-        $this->manifestPath = implode('/', array_filter([
+        $this->assetFullPath = implode('/', array_filter([
             $this->rootPath,
             $this->publicPath,
             $this->assetPath,
-            $this->manifestName
         ]));
+
+        $this->manifestPath = implode('/', [
+            $this->assetFullPath,
+            $this->manifestName
+        ]);
     }
 
     /**
@@ -80,6 +91,10 @@ class MixService extends Component
      */
     public function version($file)
     {
+        if (file_exists($this->assetFullPath . '/hot')) {
+            return '//localhost:8080/' . $file;
+        }
+
         try {
             $manifest = $this->readManifestFile();
         } catch (Exception $e) {
