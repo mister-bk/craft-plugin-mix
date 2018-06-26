@@ -1,9 +1,9 @@
 # Changelog
 
-## Unreleased
-
+## 1.5.0 - 2018-06-26
 ### Added
-- Added support for hot module replacement. ([#8](https://github.com/mister-bk/craft-plugin-mix/issues/8))
+- Add note about trimmed paths to README (thanks to [@sergeifilippov](https://github.com/sergeifilippov))
+- Added support for hot module replacement (thanks to [@benjamindavid](https://github.com/benjamindavid))
 
 ## 1.4.3 - 2018-03-14
 ### Changed
