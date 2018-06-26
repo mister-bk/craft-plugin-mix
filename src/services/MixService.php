@@ -77,10 +77,10 @@ class MixService extends Component
             $this->assetPath,
         ]));
 
-        $this->manifestPath = implode('/', array_filter([
+        $this->manifestPath = implode('/', [
             $this->assetFullPath,
             $this->manifestName
-        ]));
+        ]);
     }
 
     /**
