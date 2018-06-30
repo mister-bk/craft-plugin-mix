@@ -47,7 +47,7 @@ The available settings are:
   * **Public Path** - The path of the public directory containing the index.php
   * **Asset Path** - The path of the asset directory where Laravel Mix stores the compiled files
 
-> **NOTE:** Both **Public Path** and **Asset Path** get trimmed to enabled all kind of path combinations. Here are some examples:
+> **NOTE:** Both **Public Path** and **Asset Path** get trimmed to allow all kind of path combinations.
 >  * `/web/` + `/assets/` → `/web/assets/`
 >  * `web` + `assets` → `/web/assets/`
 >  * `/` + `assets` → `/assets/`
