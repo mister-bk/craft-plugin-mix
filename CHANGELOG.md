@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.5.1 - 2018-06-30
+### Added
+- Add `downloadUrl` property to `composer.json`
+
+### Changed
+- Correct a typo in README
+
 ## 1.5.0 - 2018-06-26
 ### Added
 - Add note about trimmed paths to README (thanks to [@sergeifilippov](https://github.com/sergeifilippov))
@@ -37,8 +44,8 @@
 
 ## 1.0.2 - 2017-06-22
 ### Changed
-- Improve package keywords.
-- Fix up the changelog.
+- Improve package keywords
+- Fix up the changelog
 
 ## 1.0.1 - 2017-04-23
 ### Changed
@@ -46,4 +53,4 @@
 
 ## 1.0.0 - 2017-04-21
 ### Added
-- Initial release.
+- Initial release
