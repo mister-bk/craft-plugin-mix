@@ -45,7 +45,7 @@ class Mix extends Plugin
             }
         );
 
-        Craft::$app->view->twig->addExtension(new MixTwigExtension());
+        Craft::$app->view->registerTwigExtension(new MixTwigExtension());
 
         Craft::info('Mix plugin loaded', __METHOD__);
     }
