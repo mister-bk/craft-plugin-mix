@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.2 - 2018-07-20
+### Changed
+- Register Twig extension with `registerTwigExtension()` (thanks to [@brandonkelly](https://github.com/brandonkelly))
+
 ## 1.5.1 - 2018-06-30
 ### Added
 - Add `downloadUrl` property to `composer.json`
