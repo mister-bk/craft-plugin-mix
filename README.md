@@ -7,14 +7,14 @@
 </p>
 
 <p align="center">
-  <a href="https://packagist.org/packages/misterbk/mix">
-    <img src="https://poser.pugx.org/misterbk/mix/d/total.svg" alt="Total Downloads">
+  <a href="https://packagist.org/packages/misterbk/mix/">
+    <img src="https://badgen.net/packagist/v/misterbk/mix?label=stable" alt="Latest Stable Version">
   </a>
-  <a href="https://packagist.org/packages/misterbk/mix">
-    <img src="https://poser.pugx.org/misterbk/mix/v/stable.svg" alt="Latest Stable Version">
+  <a href="https://packagist.org/packages/misterbk/mix/">
+    <img src="https://badgen.net/packagist/dt/misterbk/mix" alt="Total Downloads">
   </a>
-  <a href="https://packagist.org/packages/misterbk/mix">
-    <img src="https://poser.pugx.org/misterbk/mix/license.svg" alt="License">
+  <a href="http://opensource.org/licenses/MIT/">
+    <img src="https://badgen.net/packagist/license/misterbk/mix" alt="License">
   </a>
 </p>
 
