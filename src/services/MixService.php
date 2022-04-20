@@ -64,7 +64,7 @@ class MixService extends Component
     /**
      * @inheritdoc
      */
-    public function init()
+    public function init(): void
     {
         $settings = Mix::$plugin->getSettings();
 
