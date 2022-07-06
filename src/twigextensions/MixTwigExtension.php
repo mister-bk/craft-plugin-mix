@@ -15,7 +15,7 @@ use Twig_Extension;
 use Twig_SimpleFilter;
 use Twig_SimpleFunction;
 
-class MixTwigExtension extends Twig_Extension
+class MixTwigExtension extends \Twig\Extension\AbstractExtension
 {
     /**
      * @inheritdoc
@@ -31,7 +31,7 @@ class MixTwigExtension extends Twig_Extension
     public function getFilters()
     {
         return [
-            new Twig_SimpleFilter('mix', [$this, 'mix']),
+            new \Twig\TwigFilter('mix', [$this, 'mix']),
         ];
     }
 
@@ -41,7 +41,7 @@ class MixTwigExtension extends Twig_Extension
     public function getFunctions()
     {
         return [
-            new Twig_SimpleFunction('mix', [$this, 'mix']),
+            new \Twig\TwigFunction('mix', [$this, 'mix']),
         ];
     }
 
