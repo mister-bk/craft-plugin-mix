@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.6.0 - 2022-07-06
+### Changed
+- Add support for Craft 4 (thanks to [@totov](https://github.com/totov))
+
 ## 1.5.2 - 2018-07-20
 ### Changed
 - Register Twig extension with `registerTwigExtension()` (thanks to [@brandonkelly](https://github.com/brandonkelly))

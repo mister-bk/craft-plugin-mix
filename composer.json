@@ -1,12 +1,12 @@
 {
   "name": "misterbk/mix",
   "description": "Helper plugin for Laravel Mix in Craft CMS templates",
-  "version": "1.5.2",
+  "version": "1.6.0",
   "type": "craft-plugin",
   "license": "MIT",
   "keywords": [
     "craft",
-    "craft3",
+    "craft4",
     "craftcms",
     "craft-plugin",
     "mix",
