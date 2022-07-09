@@ -91,9 +91,6 @@ class MixService extends Component
      */
     public function version($file)
     {
-        if (file_exists($this->assetFullPath . '/hot')) {
-            return '//localhost:8080/' . $file;
-        }
 
         try {
             $manifest = $this->readManifestFile();
@@ -104,6 +101,14 @@ class MixService extends Component
         $fileKey = '/' . ltrim($file, '/');
         if (is_array($manifest) && isset($manifest[$fileKey])) {
             $file = $manifest[$fileKey];
+        }
+        
+        if (file_exists($this->assetFullPath . '/hot')) {
+            return trim(file_get_contents($this->assetFullPath . '/hot')) .
+                implode(
+                    '/',
+                    array_filter([$this->assetPath, ltrim($file, '/')])
+                );
         }
 
         return '/' . implode('/', array_filter([
