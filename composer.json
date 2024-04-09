@@ -1,7 +1,6 @@
 {
   "name": "misterbk/mix",
   "description": "Helper plugin for Laravel Mix in Craft CMS templates",
-  "version": "1.6.0",
   "type": "craft-plugin",
   "license": "MIT",
   "keywords": [
@@ -41,5 +40,11 @@
       "mix": "misterbk\\mix\\services\\MixService"
     },
     "class": "misterbk\\mix\\Mix"
+  },
+  "config": {
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "craftcms/plugin-installer": true
+    }
   }
 }
