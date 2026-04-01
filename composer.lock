@@ -475,16 +475,16 @@
         },
         {
             "name": "craftcms/cms",
-            "version": "5.9.9",
+            "version": "5.9.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/craftcms/cms.git",
-                "reference": "74eb5d3a9ffa935df1a4fc2b6ddb1042d9f8e582"
+                "reference": "7882526a2a26ab6d515604b7f0a0a04eb1760e25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craftcms/cms/zipball/74eb5d3a9ffa935df1a4fc2b6ddb1042d9f8e582",
-                "reference": "74eb5d3a9ffa935df1a4fc2b6ddb1042d9f8e582",
+                "url": "https://api.github.com/repos/craftcms/cms/zipball/7882526a2a26ab6d515604b7f0a0a04eb1760e25",
+                "reference": "7882526a2a26ab6d515604b7f0a0a04eb1760e25",
                 "shasum": ""
             },
             "require": {
@@ -601,7 +601,7 @@
                 "rss": "https://github.com/craftcms/cms/releases.atom",
                 "source": "https://github.com/craftcms/cms"
             },
-            "time": "2026-02-12T01:13:27+00:00"
+            "time": "2026-02-17T21:31:10+00:00"
         },
         {
             "name": "craftcms/plugin-installer",
@@ -1967,20 +1967,20 @@
         },
         {
             "name": "league/uri",
-            "version": "7.8.0",
+            "version": "7.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/uri.git",
-                "reference": "4436c6ec8d458e4244448b069cc572d088230b76"
+                "reference": "08cf38e3924d4f56238125547b5720496fac8fd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/uri/zipball/4436c6ec8d458e4244448b069cc572d088230b76",
-                "reference": "4436c6ec8d458e4244448b069cc572d088230b76",
+                "url": "https://api.github.com/repos/thephpleague/uri/zipball/08cf38e3924d4f56238125547b5720496fac8fd4",
+                "reference": "08cf38e3924d4f56238125547b5720496fac8fd4",
                 "shasum": ""
             },
             "require": {
-                "league/uri-interfaces": "^7.8",
+                "league/uri-interfaces": "^7.8.1",
                 "php": "^8.1",
                 "psr/http-factory": "^1"
             },
@@ -2053,7 +2053,7 @@
                 "docs": "https://uri.thephpleague.com",
                 "forum": "https://thephpleague.slack.com",
                 "issues": "https://github.com/thephpleague/uri-src/issues",
-                "source": "https://github.com/thephpleague/uri/tree/7.8.0"
+                "source": "https://github.com/thephpleague/uri/tree/7.8.1"
             },
             "funding": [
                 {
@@ -2061,20 +2061,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-01-14T17:24:56+00:00"
+            "time": "2026-03-15T20:22:25+00:00"
         },
         {
             "name": "league/uri-interfaces",
-            "version": "7.8.0",
+            "version": "7.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/uri-interfaces.git",
-                "reference": "c5c5cd056110fc8afaba29fa6b72a43ced42acd4"
+                "reference": "85d5c77c5d6d3af6c54db4a78246364908f3c928"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/c5c5cd056110fc8afaba29fa6b72a43ced42acd4",
-                "reference": "c5c5cd056110fc8afaba29fa6b72a43ced42acd4",
+                "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/85d5c77c5d6d3af6c54db4a78246364908f3c928",
+                "reference": "85d5c77c5d6d3af6c54db4a78246364908f3c928",
                 "shasum": ""
             },
             "require": {
@@ -2137,7 +2137,7 @@
                 "docs": "https://uri.thephpleague.com",
                 "forum": "https://thephpleague.slack.com",
                 "issues": "https://github.com/thephpleague/uri-src/issues",
-                "source": "https://github.com/thephpleague/uri-interfaces/tree/7.8.0"
+                "source": "https://github.com/thephpleague/uri-interfaces/tree/7.8.1"
             },
             "funding": [
                 {
@@ -2145,7 +2145,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-01-15T06:54:53+00:00"
+            "time": "2026-03-08T20:05:35+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
